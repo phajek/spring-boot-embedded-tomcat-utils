@@ -10,6 +10,7 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextClosedEvent;
 
 import java.time.Duration;
+import java.util.Objects;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -46,6 +47,8 @@ public class TomcatGracefulShutdownListener implements ApplicationListener<Conte
      *                                process to interrupt active processing threads. Threads needs to interrupt in this timeout otherwise will be killed).
      */
     public TomcatGracefulShutdownListener(Duration gracefulShutdownTimeout, Duration forcefulShutdownTimeout) {
+        Objects.requireNonNull(gracefulShutdownTimeout);
+        Objects.requireNonNull(forcefulShutdownTimeout);
         this.gracefulShutdownTimeout = gracefulShutdownTimeout;
         this.forcefulShutdownTimeout = forcefulShutdownTimeout;
     }
