@@ -10,7 +10,7 @@ This project contains logic for graceful shutdown on Embedded Tomcat which is op
 for Kubernetes/Openshift Container platforms (it has been tested on OpenShift but should
 work on Kubernetes as well).
 
-Please note, that base of this logic is from Spring forum: [https://github.com/spring-projects/spring-boot/issues/4657#issuecomment-161354811]([https://github.com/spring-projects/spring-boot/issues/4657#issuecomment-161354811])
+Please note, that base of this logic is from Spring forum: [https://github.com/spring-projects/spring-boot/issues/4657#issuecomment-161354811](https://github.com/spring-projects/spring-boot/issues/4657#issuecomment-161354811)
 and [https://github.com/spring-projects/spring-boot/issues/4657#issuecomment-422561557](https://github.com/spring-projects/spring-boot/issues/4657#issuecomment-422561557)
 
 The graceful shutdown ensures that, when the application is going down:
