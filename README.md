@@ -22,6 +22,7 @@ those platforms are killing container (pod) they can be still sending requests t
 is being killed. So during the deployment or scaling of containers the clients might
 get errors. For more details check: [https://hackernoon.com/graceful-shutdown-in-kubernetes-435b98794461](https://hackernoon.com/graceful-shutdown-in-kubernetes-435b98794461)
 or [https://bugzilla.redhat.com/show_bug.cgi?id=1573207#c5](https://bugzilla.redhat.com/show_bug.cgi?id=1573207#c5)
+or [https://github.com/openshift/origin/issues/18914](https://github.com/openshift/origin/issues/18914)
 
 The graceful shutdown works like this:
 * Once Spring receives ContextClosedEvent (it's going down), this this lib
