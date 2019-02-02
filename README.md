@@ -2,7 +2,7 @@
 Small utilities for Spring Boot Embedded Tomcat.
 
 Please note: since this is small project, it's suggested not to use it
-as Maven dependency, but rather copy-paste classes needed files to your project.
+as Maven dependency, but rather copy-paste classes needed for your project.
 
 ## Features of this project
 ###  Embedded Tomcat Graceful Shutdown optimized for Kubernetes/OpenShift
