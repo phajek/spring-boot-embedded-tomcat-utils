@@ -1,3 +1,6 @@
+# ! DEPRECATED !
+* this project is deprecated, use [Spring Boot Graceful Shutdown](https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#web.graceful-shutdown) instead
+
 # Spring Boot Embedded Tomcat Utils
 Small utilities for Spring Boot Embedded Tomcat.
 
